@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Kerala Tourism </title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: rgb(220, 228, 228);     
+      }
+      .row{
+        background:white;
+        border-radius: 10px;
+        box-shadow: 12px 12px 12px ;
+      }
+      img{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .btn1{
+        border:none;
+        color: white;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background-color: dodgerblue;
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+      }
+       .btn1:hover{
+         opacity: 1;
+        background-color:rgb(44, 149, 253);
+        border:1px solid;
+        color:white;
+       }
+      .labeltxt{
+      font-weight: 600;
+      font-size: 20px;
+    }
+       
+    </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light">
+      <img class="imglg" src="./img/logo1.jpg" alt="logo">
+        <div class="container">  
+          <a href="index.html" class="navbar-brand"><span class="navbrandcl"> Kerala Tourism</span></a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Log In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="signup.html">Sign Up</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="district.html">Districts</a>    
+                  </li>
+                </div>
+          </div>
+
+    </nav>
+
+    <section class="form my-4 mx-5">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <img src="./img/tree2.jpg" class="sdimg img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h1 class="kertr font-weight-bold py-3">Kerala Tourism</h1>
+            <h3><span style="color: dodgerblue;">Log In</span> <span  class="subsg">to your account</span></h3>
+            <form action="index.html" onsubmit="return isEmail()" >
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <label for="email" class="labeltxt pt-2">Email</label>
+                  <input type="text" placeholder="Email-Address"  class="form-control m-3 p-3" id="email">
+                  <label for="error" id=error></label>
+
+                </div>
+                <div class="form-row">
+                  <div class="col-lg-7">
+                    <label for="password" class="labeltxt">Password</label>
+                    <input type="password" placeholder="*********" class="form-control m-3 p-3" id="pwd">
+               </div>
+               <div class="form-row">
+                <div class="col-lg-7">
+                  <button class="btn1 mt-1 m-3 p-2" id="submit">Log In</button>
+                  <div>
+                    <a href="#">Forgot password</a>
+                    <p>Don't have an account? <a href="signup.html">Register here</a></p>
+                  </div>                 
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="ftr1 pb-1 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead mt-2 mb-2 pt-1">Copyright &copy; 2021. <a class="fttrm" href=""><span>Terms of Use</span></a> | <a class="fttrm" href=""><span>Cookie Policy</span></a> | <a class="fttrm" href=""><span>Contact Us</span></a></p>
+
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="form.js"></script>
+
+
+</body>
+</html>
